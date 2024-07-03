@@ -13,8 +13,8 @@ const userSchema = new mongoose.Schema({
         type:String,
         required:true
     },
-    OTP:{
-        type:Number,
+    OTP:{        
+      type:String,
     },
     status:{
         type:String,
