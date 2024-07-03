@@ -1,11 +1,20 @@
-import express from 'express';
-import { dbConnection } from './db/connection.js';
+import express from 'express'
 
 
 const app = express()
+const port = 3000
 
-dbConnection()
 
-app.listen(3000,()=>{
-    console.log('server is running ');
+
+
+app.use(express.json())
+
+
+
+
+
+
+app.listen(port,()=>{
+    console.log('server is running on port', port);
 })
+
