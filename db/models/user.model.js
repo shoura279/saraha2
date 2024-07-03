@@ -13,8 +13,12 @@ const userSchema = new mongoose.Schema({
         type:String,
         required:true
     },
-    OTP:{
+    OTP:{        
+      type:String,
+    },
+    status:{
         type:String,
+        default:"offline"
     }
 },{
     timestamps:true
