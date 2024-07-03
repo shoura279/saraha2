@@ -14,6 +14,9 @@ dbConnection()
 app.use('/users', userRouter)
 
 
+app.use('/api', messageRouter)
+
+
 app.use(globalError);
 app.listen(port, () => {
   console.log('server is running on port', port);
