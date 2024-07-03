@@ -10,6 +10,9 @@ const port = 3000
 app.use(express.json())
 dbConnection()
 
+app.use('/api', messageRouter)
+
+
 app.use(globalError);
 app.listen(port, () => {
   console.log('server is running on port', port);
