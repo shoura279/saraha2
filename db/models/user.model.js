@@ -15,6 +15,10 @@ const userSchema = new mongoose.Schema({
     },
     OTP:{
         type:Number,
+    },
+    status:{
+        type:String,
+        default:"offline"
     }
 },{
     timestamps:true
