@@ -14,7 +14,7 @@ const userSchema = new mongoose.Schema({
         required:true
     },
     OTP:{
-        type:Number,
+        type:String,
     }
 },{
     timestamps:true
