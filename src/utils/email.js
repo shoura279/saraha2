@@ -2,7 +2,7 @@ import nodemailer from "nodemailer"
 
 export const sendMail = async (email,subject,OTP)=>{
     const transporter = nodemailer.createTransport({
-        service: "gamil",
+        service: "gmail",
         auth: {
           user: "karimelgarhy864@gmail.com",
           pass: "fbzatdzilxzrzimt",
