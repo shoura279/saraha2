@@ -2,6 +2,7 @@ import express from 'express'
 import { globalError } from './src/utils/globalError.js'
 import { dbConnection } from './db/connection.js'
 import userRouter from './src/modules/user/user.route.js'
+import messageRouter from './src/modules/message/message.router.js'
 
 
 
